@@ -1,7 +1,7 @@
 package {
     import org.flexunit.Assert;
 
-    public class FlexUnitStaticTest {
+    public class StaticTest {
         private static var counter:int = 0;
 
         [Test(order=1)]
