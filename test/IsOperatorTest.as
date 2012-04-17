@@ -1,7 +1,7 @@
 package {
     import org.flexunit.Assert;
 
-    public class IsTest {
+    public class IsOperatorTest {
 
         [Test]
         public function isNumber():void {

@@ -1,12 +1,12 @@
 package {
     import org.flexunit.Assert;
 
-    public class AsTest {
-        private var instance:AsTest;
+    public class AsOperatorTest {
+        private var instance:AsOperatorTest;
 
         [Before]
         public function setUp():void {
-            instance = new AsTest();
+            instance = new AsOperatorTest();
         }
 
         [Test]
@@ -16,13 +16,13 @@ package {
 
         [Test]
         public function asPassing():void {
-            Assert.assertStrictlyEquals(instance, instance as AsTest);
+            Assert.assertStrictlyEquals(instance, instance as AsOperatorTest);
             Assert.assertStrictlyEquals(instance, instance as Object);
         }
 
         [Test(expects="TypeError")]
         public function explicitCastingFailing():void {
-            AsTest(43);
+            AsOperatorTest(43);
         }
     }
 }
