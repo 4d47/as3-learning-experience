@@ -1,4 +1,4 @@
-package {
+package flash.utils {
     import org.flexunit.Assert;
 
     public class ProxyTest {

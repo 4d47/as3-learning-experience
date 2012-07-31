@@ -1,4 +1,4 @@
-package {
+package lang {
     import org.flexunit.Assert;
 
     public class AsOperatorTest {
