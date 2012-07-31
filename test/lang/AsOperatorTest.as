@@ -24,5 +24,13 @@ package lang {
         public function explicitCastingFailing():void {
             AsOperatorTest(43);
         }
+
+        [Test]
+        public function explicitCastingOfInt():void {
+            Assert.assertStrictlyEquals(0, int("a12"));
+            Assert.assertStrictlyEquals(0, int(false));
+            Assert.assertStrictlyEquals(0, int(this));
+        }
+
     }
 }
