@@ -13,5 +13,10 @@ package lang {
         public function isNull():void {
             Assert.assertTrue(10 is null);
         }
+
+        [Test()]
+        public function upcasting():void {
+            Assert.assertTrue( Object(this) is IsOperatorTest );
+        }
     }
 }
