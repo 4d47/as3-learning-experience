@@ -1,6 +1,4 @@
 package flash.utils {
-    import flash.utils.getQualifiedClassName;
-
     import org.flexunit.asserts.*;
 
     public class GetQualifiedClassNameTest {

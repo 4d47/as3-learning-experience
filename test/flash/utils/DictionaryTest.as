@@ -1,6 +1,4 @@
 package flash.utils {
-    import flash.utils.Dictionary;
-    import flash.system.System;
     import org.flexunit.asserts.*;
 
     public class DictionaryTest {

@@ -3,13 +3,13 @@ package flash.utils {
 
     public class ProxyTest {
         [Test]
-	public function ninetyNine():void {
+        public function ninetyNine():void {
             var ninetyNine:NinetyNine = new NinetyNine();
-	    assertEquals(99, ninetyNine.something);
-	    assertEquals(99, ninetyNine.bar);
-	    assertEquals(99, ninetyNine.ANYTHING);
-	    assertEquals(99, ninetyNine.something());
-	}
+            assertEquals(99, ninetyNine.something);
+            assertEquals(99, ninetyNine.bar);
+            assertEquals(99, ninetyNine.ANYTHING);
+            assertEquals(99, ninetyNine.something());
+        }
     }
 }
 
