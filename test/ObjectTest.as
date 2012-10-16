@@ -1,11 +1,11 @@
 package {
-    import org.flexunit.Assert;
+    import org.flexunit.asserts.*;
 
     public class ObjectTest {
 
         [Test]
         public function methodEquality():void {
-            Assert.assertTrue(new ObjectTest().methodEquality !== new ObjectTest().methodEquality);
+            assertTrue(new ObjectTest().methodEquality !== new ObjectTest().methodEquality);
         }
     }
 }

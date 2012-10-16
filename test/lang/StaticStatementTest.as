@@ -1,5 +1,5 @@
 package lang {
-    import org.flexunit.Assert;
+    import org.flexunit.asserts.*;
 
     public class StaticStatementTest {
         private static var counter:int = 0;
@@ -7,13 +7,13 @@ package lang {
         [Test(order=1)]
         public function one():void {
             counter++;
-            Assert.assertEquals(1, counter);
+            assertEquals(1, counter);
         }
 
         [Test(order=2)]
         public function two():void {
             counter++;
-            Assert.assertEquals(2, counter);
+            assertEquals(2, counter);
         }
     }
 }

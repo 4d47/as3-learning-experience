@@ -1,7 +1,7 @@
 package flash.utils {
     import flash.utils.Dictionary;
     import flash.system.System;
-    import org.flexunit.Assert;
+    import org.flexunit.asserts.*;
 
     public class DictionaryTest {
         private var dict:Dictionary;
@@ -15,7 +15,7 @@ package flash.utils {
 
         [Test]
         public function keyNotFound():void {
-            Assert.assertNull( dict['not-found'] );
+            assertNull( dict['not-found'] );
         }
     }
 }

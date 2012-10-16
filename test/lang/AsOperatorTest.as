@@ -1,5 +1,5 @@
 package lang {
-    import org.flexunit.Assert;
+    import org.flexunit.asserts.*;
 
     public class AsOperatorTest {
         private var instance:AsOperatorTest;
@@ -11,13 +11,13 @@ package lang {
 
         [Test]
         public function asFailing():void {
-            Assert.assertStrictlyEquals(null, instance as Number);
+            assertStrictlyEquals(null, instance as Number);
         }
 
         [Test]
         public function asPassing():void {
-            Assert.assertStrictlyEquals(instance, instance as AsOperatorTest);
-            Assert.assertStrictlyEquals(instance, instance as Object);
+            assertStrictlyEquals(instance, instance as AsOperatorTest);
+            assertStrictlyEquals(instance, instance as Object);
         }
 
         [Test(expects="TypeError")]
@@ -27,9 +27,9 @@ package lang {
 
         [Test]
         public function explicitCastingOfInt():void {
-            Assert.assertStrictlyEquals(0, int("a12"));
-            Assert.assertStrictlyEquals(0, int(false));
-            Assert.assertStrictlyEquals(0, int(this));
+            assertStrictlyEquals(0, int("a12"));
+            assertStrictlyEquals(0, int(false));
+            assertStrictlyEquals(0, int(this));
         }
 
     }

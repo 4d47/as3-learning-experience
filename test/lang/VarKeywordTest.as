@@ -1,5 +1,5 @@
 package lang {
-    import org.flexunit.Assert;
+    import org.flexunit.asserts.*;
 
     public class VarKeywordTest {
 
@@ -9,13 +9,13 @@ package lang {
             if (success) {
                 var data:String = 'hello';
             }
-            Assert.assertStrictlyEquals('hello', data);
+            assertStrictlyEquals('hello', data);
         }
 
         [Test]
         public function canReferencePreviousDefinitionInMultipleDeclaration():void {
             var a:String = 'a', b:String = a;
-            Assert.assertStrictlyEquals('a', b);
+            assertStrictlyEquals('a', b);
         }
     }
 }

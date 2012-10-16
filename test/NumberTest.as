@@ -1,12 +1,12 @@
 package {
-    import org.flexunit.Assert;
+    import org.flexunit.asserts.*;
 
     public class NumberTest {
 
         [Test]
         public function numberBoolean():void {
-            Assert.assertStrictlyEquals(1, Number(true));
-            Assert.assertStrictlyEquals(0, Number(false));
+            assertStrictlyEquals(1, Number(true));
+            assertStrictlyEquals(0, Number(false));
         }
     }
 }

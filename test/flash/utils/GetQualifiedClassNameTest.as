@@ -1,21 +1,21 @@
 package flash.utils {
     import flash.utils.getQualifiedClassName;
 
-    import org.flexunit.Assert;
+    import org.flexunit.asserts.*;
 
     public class GetQualifiedClassNameTest {
 
         [Test]
         public function simple():void {
-            Assert.assertEquals("null", getQualifiedClassName(null));
-            Assert.assertEquals("int", getQualifiedClassName(12));
-            Assert.assertEquals("Boolean", getQualifiedClassName(true));
-            Assert.assertEquals("Number", getQualifiedClassName(12.5));
-            Assert.assertEquals("String", getQualifiedClassName("foo"));
-            Assert.assertEquals("Array", getQualifiedClassName([]));
-            Assert.assertEquals("Object", getQualifiedClassName({}));
-            Assert.assertEquals("XML", getQualifiedClassName(<foo/>));
-            Assert.assertEquals("flash.utils::GetQualifiedClassNameTest", getQualifiedClassName(this));
+            assertEquals("null", getQualifiedClassName(null));
+            assertEquals("int", getQualifiedClassName(12));
+            assertEquals("Boolean", getQualifiedClassName(true));
+            assertEquals("Number", getQualifiedClassName(12.5));
+            assertEquals("String", getQualifiedClassName("foo"));
+            assertEquals("Array", getQualifiedClassName([]));
+            assertEquals("Object", getQualifiedClassName({}));
+            assertEquals("XML", getQualifiedClassName(<foo/>));
+            assertEquals("flash.utils::GetQualifiedClassNameTest", getQualifiedClassName(this));
         }
     }
 }
